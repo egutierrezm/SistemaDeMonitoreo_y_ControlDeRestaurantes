@@ -1,0 +1,87 @@
+/* Estilos generales */
+body {
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+    background: linear-gradient(135deg, #f2e1d6, #d4edda);
+}
+
+/* Para los menus */
+/* Estilo para los items del menú */
+.navbar .nav-item .nav-link {
+    color: #f8f9fa; /* Color de texto blanco por defecto */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+/* Hover de los items principales en el menú */
+.navbar .nav-item .nav-link:hover {
+    background-color: #007bff;  /* Fondo azul al pasar el ratón */
+    color: #ffffff;             /* Color de texto blanco */
+}
+
+/* Hover sobre los items del submenú (dropdown) */
+.navbar .dropdown-item:hover {
+    background-color: #007bff;  /* Fondo azul en el submenú */
+    color: #ffffff;             /* Texto blanco en el submenú */
+}
+
+/* Hover sobre el item dropdown (el que tiene submenú) */
+.navbar .nav-item.dropdown:hover > .nav-link {
+    background-color: #0056b3;  /* Fondo más oscuro en el item con submenú */
+    color: #ffffff;             /* Texto blanco */
+}
+
+
+/* Para las secciones del contenido */
+.content {
+    display: none; /* Ocultar todo el contenido por defecto */
+}
+
+.content.active {
+    display: block; /* Mostrar solo el contenido activo */
+}
+
+/* Para los artículos dentro de las secciones */
+article {
+    margin-bottom: 20px;
+}
+
+figure {
+    text-align: center;
+    margin: 20px 0;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+figcaption {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Estilos para la seccion inicio */
+
+#inicio .text-left {
+    flex: 1;
+    margin-right: 20px;
+}
+
+#inicio h1 {
+    font-size: 2.5rem;
+    line-height: 1.3;
+}
+

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INF162</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header class="bg-dark text-white p-3">
+        <div class="container">
+            <h2>Sistema de Control y Monitoreo para Restaurantes Grupo 22</h2>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-target="inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Análisis Estructurado
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#" data-target="modelo-ambiental">Modelo Ambiental</a>
+                                <a class="dropdown-item dropdown-toggle" href="#" id="modeloComportamientoDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Modelo de Comportamiento
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="modeloComportamientoDropdown">
+                                    <a class="dropdown-item" href="#" data-target="diagrama-flujo-datos">Diagrama de Flujo de Datos</a>
+                                    <a class="dropdown-item" href="#" data-target="diagrama-entidad-relacion">Diagrama Entidad Relación</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-target="analisis-orientado-a-objetos">Análisis Orientado a Objetos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-target="video">Video</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container my-4">
+        <section id="inicio" class="content text-center">
+            <div class="d-flex align-items-center justify-content-between flex-wrap">
+                <div class="text-left">
+                    <h1 class="text-dark font-weight-bold mb-3">¡Bienvenidos a nuestro restaurante!<br> <span class="text-success">Un lugar para todos los gustos </span></h1>
+                </div>
+                <div>
+                    <img src="img/comidaBuffet.jpg" alt="Basket with healthy vegetables" class="img-fluid rounded shadow-lg">
+                </div>
+            </div>
+            
+        </section>
+
+        <section id="analisis-estructurado" class="content active">
+            <h2>Análisis Estructurado</h2>
+            <p>Descripción del análisis estructurado...</p>
+        </section>
+
+        <section id="modelo-ambiental" class="content">
+            <h3>Modelo Ambiental</h3>
+            <!-- Declaración de Propósitos -->
+            <article class="mb-4">
+                <h4>a). Declaración de Propósitos</h4>
+                <p>
+                    El propósito del Sistema de Control y Monitoreo para restaurantes es automatizar y optimizar la gestión de ventas, control de inventarios, procesamiento de pedidos y supervisión de empleados en una sucursal de venta.
+                </p>
+                <p>
+                    El sistema busca mejorar la eficiencia en el manejo de pedidos, la actualización en tiempo real de inventarios, la interacción con proveedores para la entrega de ingredientes, y la generación de reportes de ventas e inventarios, garantizando una operación fluida y satisfactoria tanto para los clientes como para los empleados y gerentes.
+                </p>
+            </article>
+            <!-- Diagrama de Contexto -->
+            <article class="mb-4">
+                <h4>b). Diagrama de Contexto</h4>
+                <p>A continuación, se presenta el diagrama de contexto:</p>
+                <figure>
+                    <img src="img/modeloAmbiental.png" alt="Diagrama de Contexto" class="img-fluid rounded shadow">
+                    <figcaption class="text-muted mt-2">Figura 1: Diagrama de Contexto del Sistema de Control y Monitoreo de Restaurantes</figcaption>
+                </figure>
+            </article>
+            <!-- Lista de Acontecimientos -->
+            <article>
+                <h4>c). Lista de Acontecimientos</h4>
+                <ul>
+                    <li>Cliente realiza un pedido.</li>
+                    <li>Cliente cancela un pedido.</li>
+                    <li>Empleado actualiza el estado del pedido.</li>
+                    <li>Gerente solicita reporte de ventas.</li>
+                    <li>Gerente solicita reporte de inventarios.</li>
+                    <li>Cliente solicita información sobre su pedido.</li>
+                    <li>Proveedor notifica cambios en el stock de ingredientes.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="diagrama-flujo-datos" class="content">
+            <!-- Modelo de Comportamiento -->
+            <h3>Diagrama de Flujo de Datos por Niveles</h3>
+            <!-- DFD Nivel 0 -->
+            <article class="mb-4">
+                <h4>Diagrama de Flujo de Datos Nivel 0</h4>
+                <p>
+                    El Diagrama de Flujo de Datos (DFD) Nivel 0 representa de manera general cómo el sistema gestiona el flujo de información entre sus principales procesos, actores externos y almacenes de datos. Este nivel muestra las entradas y salidas del sistema sin detallar los procesos internos, proporcionando una visión global del funcionamiento del sistema. En este caso, se modela un sistema de gestión de pedidos en un restaurante, donde los clientes, empleados, proveedores y sucursales interactúan con los procesos clave, como la recepción de pedidos, la gestión de productos e inventarios, y la generación de reportes. Este diagrama es una herramienta esencial para comprender el alcance del sistema y sus principales interacciones.
+                </p>
+                <figure>
+                    <img src="img/dfdNivel0.png" alt="DDF NIvel 0" class="img-fluid rounded shadow">
+                    <figcaption class="text-muted mt-2">Figura 1: DDF NIvel 0</figcaption>
+                </figure>
+            </article>
+            <!-- DFD Nivel 1 -->
+            <article class="mb-4">
+                <h4>Diagrama de Flujo de Datos Nivel 1</h4>
+                <p>
+                    El Diagrama de Flujo de Datos (DFD) Nivel 1 desglosa los procesos principales identificados en el Nivel 0, mostrando con mayor detalle cómo interactúan entre sí y con los almacenes de datos del sistema. Este nivel refleja el funcionamiento interno de cada proceso clave, como la gestión de pedidos, el control de inventarios, la administración de empleados y la relación con proveedores. En este diagrama se evidencia cómo se manejan las entradas y salidas de información dentro del sistema, permitiendo un análisis más profundo de sus componentes y asegurando que los flujos de información se realicen de manera eficiente y coherente.
+                </p>
+                <figure>
+                    <img src="img/dfdNivel1.png" alt="DFD Nivel 1" class="img-fluid rounded shadow">
+                    <figcaption class="text-muted mt-2">Figura 2: DFD Nivel 1</figcaption>
+                </figure>
+            </article>
+            <!-- DFD Nivel 2 -->
+            <article>
+                <h4>Diagrama de Flujo de Datos Nivel 2</h4>
+                <p>
+                    El Diagrama de Flujo de Datos (DFD) Nivel 2 proporciona un desglose aún más detallado de los procesos específicos identificados en el Nivel 1, mostrando cómo cada subproceso interactúa con los actores externos, los almacenes de datos y otros subprocesos dentro del sistema. En este nivel, se modela de forma precisa cómo se manejan tareas particulares, como la validación de pedidos, el cálculo de costos, la actualización de inventarios y la generación de reportes. Este nivel es especialmente útil para comprender las operaciones internas del sistema y asegurarse de que todos los flujos de información y datos estén correctamente diseñados y alineados con los objetivos del negocio.
+                </p>
+                <figure>
+                    <img src="img/dfdNivel2.png" alt="DFD Nivel 2" class="img-fluid rounded shadow">
+                    <figcaption class="text-muted mt-2">Figura 3: DFD Nivel 2</figcaption>
+                </figure>
+            </article> 
+        </section>
+
+        <section id="diagrama-entidad-relacion" class="content active">
+            <!-- Diagrama Entidad Relación -->
+            <h2>Diagrama Entidad Relación</h2>
+            <article class="mb-4">
+                <p>
+                    El Modelo Entidad-Relación (MER) que se presenta a continuación describe un sistema de gestión de pedidos, productos, proveedores y empleados, estructurado para un restaurante. Este modelo está diseñado para representar de manera visual y lógica las entidades clave dentro del sistema y sus interacciones. En el diagrama, las principales entidades son Ingredientes, Proveedores, Productos, Sucursales, Pedidos, Empleados y Clientes, cada una con sus atributos específicos, tales como identificadores, nombres, direcciones y otros datos relevantes.
+                </p>
+                <p>
+                    Las relaciones entre estas entidades están cuidadosamente definidas para reflejar los procesos de negocio del sistema. Por ejemplo, los Productos están compuestos por varios Ingredientes, los Proveedores suministran estos Ingredientes, y los Productos se sirven en diferentes Sucursales. Los Pedidos se asocian tanto con los Clientes que los realizan como con los Productos que los conforman. Además, los Empleados trabajan en Sucursales específicas, y cada sucursal tiene un Gerente que supervisa su funcionamiento.
+                </p>
+                <p>
+                    Este modelo utiliza una notación estándar para representar las entidades, relaciones y atributos, lo que facilita la comprensión de los procesos que manejan tanto los datos como las interacciones dentro del sistema. Las cardinalidades entre las entidades están claramente indicadas, como las relaciones de uno a muchos (1:N) y muchos a muchos (N:M), lo que ayuda a visualizar cómo los datos se organizan y se interconectan.
+                </p>
+            </article>
+            <figure>
+                <img src="img/diagramaEntidadRelacion.png" alt="Diagrama Entidad Relacion" class="img-fluid rounded shadow">
+                <figcaption class="text-muted mt-2">Figura 1: Diagrama Entidad Relacion</figcaption>
+            </figure>
+        </section>
+
+        <section id="analisis-orientado-a-objetos" class="content">
+            <!-- Diagrama de Clases -->
+            <h3>Análisis Orientado a Objetos</h3>
+            <article class="mb-4">
+                <p>
+                    El análisis orientado a objetos se centra en identificar los objetos y clases principales que forman parte del sistema, sus atributos, métodos y relaciones. 
+                    Este enfoque permite modelar el sistema de forma más natural, aprovechando conceptos como la encapsulación, la herencia y el polimorfismo.
+                </p>
+                <p>
+                    A continuación, se presenta el diagrama de clases que representa las principales entidades del sistema y sus interacciones.
+                </p>
+            </article>
+            <figure>
+                <img src="img/modeloOrientadoObjetos.png" alt="Diagrama de Clases del Sistema" class="img-fluid rounded shadow">
+                <figcaption class="text-muted mt-2">Figura 1: Diagrama de Clases del Sistema</figcaption>
+            </figure>
+        </section>
+
+        <section id="video" class="content">
+            <div class="container my-4">
+                <h2 class="text-center mb-4">Conoce cómo se hizo</h2>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/OmYRD3Slmw8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>                       
+        </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>  <!-- Usamos la versión completa de jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
