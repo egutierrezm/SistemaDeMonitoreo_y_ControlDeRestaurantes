@@ -1,7 +1,0 @@
-.content {
-    display: none; /* Ocultar todo el contenido por defecto */
-}
-
-.content.active {
-    display: block; /* Mostrar solo el contenido activo */
-}
